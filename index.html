@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Por el mundo | Viajá seguro</title>
+        <link rel="shortcuit icon" href="./img/logo.jpg">
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+<body>
+    <header class="header">
+        <nav class="navbarGeneral">
+            <input type="checkbox" id="btn-menu">
+            <label for="btnMenu"><img src="./img/boton.png" class="btn" alt="btn"></label>
+            <ul class="navbar">
+                <li class="navbarLi"><a class="navbarLink" href="index.html">Home</a></li>
+                <li class="navbarLi"><a class="navbarLink" href="html/vuelos.html">Vuelos</a></li>
+                <li class="navbarLi"><a class="navbarLink" href="html/hoteles.html">Hoteles</a></li>
+                <li class="navbarLi"><a class="navbarLink" href="html/contacto.html">Cuenta</a></li>
+                <li class="navbarLi"><a class="navbarLink" href="html/sobrenosotros.html">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="paises">
+        <select name="paises" id="paises">
+            <option value="0">Seleccione su país</option>
+            <option value="1">Argentina</option>
+            <option value="2">Chile</option>
+            <option value="3">Colombia</option>
+            <option value="4">Uruguay</option>
+            <option value="5">Paraguay</option>
+        </select>
+    </div>
+
+    <main class="todo">
+        <h1 class="titulo">Por el mundo</h1>
+        <h3 class="subtitulo">Viajá seguro</h3>
+        <img src="./img/logo.jpg" alt="logo" class="logo">
+        <div class="opcionesDeViaje">
+            <select name="transportes" id="transportes">
+                <option value="0">Transportes</option>
+                <option value="1">Autos</option>
+                <option value="2">Camionetas</option>
+                <option value="3">Colectivos</option>
+                <option value="4">Motos</option>
+            </select>
+            <select name="actividades" id="actividades">
+                <option value="0">Actividades</option>
+                <option value="1">Miami</option>
+                <option value="2">Las Vegas</option>
+                <option value="3">Paris</option>
+                <option value="4">Barcelona</option>
+                <option value="5">Roma</option>
+            </select>
+            <select name="paquetes" id="paquetes" class="paquetes">
+                <option value="0">Paquetes</option>
+                <option value="1">Armá tu paquete</option>
+                <option value="2">Paquetes recomendados</option>
+            </select>
+            <select name="promos" id="promos">
+                <option value="0">Promociones</option>
+                <option value="1">Vuelos</option>
+                <option value="2">Vehículos</option>
+                <option value="3">Hospedaje</option>
+            </select>
+        </div>
+
+        <div class="carrousel">
+            <a href="#img1"><img class="carrouselImg" src="./img/miami.jpg" alt="miami"></a>
+            <a href="#img2"><img class="carrouselImg" src="./img/fotos/barcelona.jpg" alt="barcelona"></a>
+            <a href="#img3"><img class="carrouselImg" src="./img/fotos/los angeles.jpg" alt="losangeles"></a>
+            <a href="#img4"><img class="carrouselImg" src="./img/fotos/paris.jpg" alt="paris"></a>
+            <a href="#img5"><img class="carrouselImg" src="./img/fotos/rio de janeiro.jpg" alt="rio"></a>
+            <a href="#img6"><img class="carrouselImg" src="./img/fotos/roma.jpg" alt="roma"></a>
+            <a href="#img7"><img class="carrouselImg" src="./img/fotos/rusia.jpg" alt="rusia"></a>
+        </div>
+
+        <div class="modal" id="img1">
+            <h3>Paisaje 1</h3>
+            <div class="imagen">
+                <a href="#img7">&#60;</a>
+                <a href="#img2"><img src="img/miami.jpg"></a>
+                <a href="#img2">></a>
+            </div>
+            <a class="cerrar" href="">X</a>
+        </div>
+        <div class="modal" id="img2">
+            <h3>Paisaje 2</h3>
+            <div class="imagen">
+                <a href="#img1">&#60;</a>
+                <a href="#img3"><img src="img/fotos/barcelona.jpg"></a>
+                <a href="#img3">></a>
+            </div>
+            <a class="cerrar" href="">X</a>
+        </div>
+        <div class="modal" id="img3">
+            <h3>Paisaje 3</h3>
+            <div class="imagen">
+                <a href="#img2">&#60;</a>
+                <a href="#img4"><img src="img/fotos/los angeles.jpg"></a>
+                <a href="#img4">></a>
+            </div>
+            <a class="cerrar" href="">X</a>
+        </div>
+        <div class="modal" id="img4">
+            <h3>Paisaje 4</h3>
+            <div class="imagen">
+                <a href="#img3">&#60;</a>
+                <a href="#img5"><img src="img/fotos/paris.jpg"></a>
+                <a href="#img5">></a>
+            </div>
+            <a class="cerrar" href="">X</a>
+        </div>
+        <div class="modal" id="img5">
+            <h3>Paisaje 5</h3>
+            <div class="imagen">
+                <a href="#img4">&#60;</a>
+                <a href="#img6"><img src="img/fotos/rio de janeiro.jpg"></a>
+                <a href="#img6">></a>
+            </div>
+            <a class="cerrar" href="">X</a>
+        </div>
+        <div class="modal" id="img6">
+            <h3>Paisaje 6</h3>
+            <div class="imagen">
+                <a href="#img5">&#60;</a>
+                <a href="#img7"><img src="img/fotos/roma.jpg"></a>
+                <a href="#img7">></a>
+            </div>
+            <a class="cerrar" href="">X</a>
+        </div>
+        <div class="modal" id="img7">
+            <h3>Paisaje 7</h3>
+            <div class="imagen">
+                <a href="#img6">&#60;</a>
+                <a href="#img1"><img src="img/fotos/rusia.jpg"></a>
+                <a href="#img1">></a>
+            </div>
+            <a class="cerrar" href="">X</a>
+        </div>
+
+        <section class="sectionVuelosHoteles">
+            <div class="vuelosDiv">
+                <h2 class="vuelosTitle"><a name="vuelos"></a>Vuelos</h2>
+                <ul class="vuelosList">
+                    <li class="vuelosListItem miami">
+                        <h3 class="titulares">Miami</h3>
+                        <hr>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem illum optio voluptas incidunt. Dolorum, pariatur reiciendis excepturi laborum ad molestias quos! Magni vero facere enim assumenda rem ullam veritatis cupiditate.</p>
+                        <hr>
+                        <a class="enlace" href="./html/vuelos.html">Ver más</a>
+                    </li>
+                    <li class="vuelosListItem losAngeles">
+                        <h3 class="titulares">Los Ángeles</h3>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsum explicabo odit repellat iste aut earum aperiam, excepturi amet neque inventore illo, saepe quibusdam veniam magni quod quisquam, facilis voluptatibus.</p>
+                        <hr>
+                        <a class="enlace" href="./html/vuelos.html">Ver más</a></li>
+                    <li class="vuelosListItem cancun">
+                        <h3 class="titulares">Cancún</h3>
+                        <hr>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia earum impedit voluptate nam ea illo animi, at pariatur numquam odio sit delectus nulla commodi dicta quisquam sapiente laborum molestiae itaque.</p>
+                        <hr>
+                        <a class="enlace" href="./html/vuelos.html">Ver más</a></li>
+                    <li class="vuelosListItem riodeJaneiro">
+                        <h3 class="titulares">Río de Janeiro</h3>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, sint ad consequuntur ipsa labore distinctio nulla ut explicabo accusantium adipisci sed cupiditate alias iure ipsum consequatur veniam sequi illo reiciendis.</p>
+                        <hr>
+                        <a class="enlace" href="./html/vuelos.html">Ver más</a></li>
+                </ul>
+            </div>
+            <div class="hotelesDiv">
+                <h2 class="hotelesTitle"><a name="hoteles"></a>Hoteles</h2>
+                <ul class="hotelesUl">
+                    <li class="hotelesListItem cancun2">
+                        <h3 class="titulares">Cancún</h3>
+                        <hr>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed aut eaque consequuntur odit, veritatis facilis quidem ad facere laboriosam veniam inventore quisquam cumque minima, nihil atque quos at dignissimos quas!</p>
+                        <hr>
+                        <a class="enlace" href="html/hoteles.html">Ver más</a></li>
+                    <li class="hotelesListItem newYork">
+                        <h3 class="titulares">New York</h3>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nemo labore dolor optio, error quae tempora, ducimus tenetur eligendi dolores laborum nihil. Consequatur labore similique amet magni, rerum vero explicabo.</p>
+                        <hr>
+                        <a class="enlace" href="html/hoteles.html">Ver más</a></li>
+                    <li class="hotelesListItem orlando">
+                        <h3 class="titulares">Orlando</h3>
+                        <hr>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur sint quisquam, quo debitis, minus ullam reiciendis saepe in accusamus quidem libero ea numquam expedita dolorum at sit modi quas nulla!</p>
+                        <hr>
+                        <a class="enlace" href="html/hoteles.html">Ver más</a></li>
+                    <li class="hotelesListItem barcelona">
+                        <h3 class="titulares">Barcelona</h3>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi et ea sequi exercitationem soluta. Consectetur quis sunt minima numquam quod nam incidunt rerum aut ad distinctio, aliquid cum placeat eveniet.</p>
+                        <hr>
+                        <a class="enlace" href="html/hoteles.html">Ver más</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+<div class="infoPagos">
+    <h2 class="financiacion">Tenemos la mejor financiación para tu viaje!</h2>
+    <table cellpading="5" cellspacing="10" width="250" height="50">
+        <tr>
+            <td class="ahora12">Ahora 12</td>
+            <td class="ahora18">Ahora 18</td>
+            <td class="bbva">BBVA</td>
+        </tr>
+    </table>
+</div>
+
+<footer class="footer">
+
+    <form action="">
+        <div class="footerDiv"> 
+            <a href="contacto" name="contacto"></a>
+    
+            <p class="tituloFoo">Contáctanos y no te pierdas ninguna novedad!</p>
+            <div class="inputDiv">
+                <label for="email" class="labelForm">Ingrese su email</label>
+                <input type="text" class="input" name="ingrese-su-email" placeholder="example@gmail.com">
+            </div>
+    
+            <div class="inputDiv">
+                <label for="contraseña" class="labelForm">Ingrese su contraseña</label>
+                <input type="password" class="input" name="contraseña" placeholder="Contraseña">
+            </div>
+    
+            <div class="inputDiv">
+                <label for="comentario" class="labelForm">Haz un comentario</label>
+                <textarea name="comentario" class="input" placeholder="Escribe tu comentario" cols="30" rows="5"></textarea>
+            </div>
+    
+            <div class="divSubmit">
+                <input type="submit" class="input" value="Enviar">
+                <input type="reset" class="input" value="Borrar-datos">
+            </div>
+
+            <div class="terminos">
+                <input type="checkbox" name="terminos-y-condiciones">
+                <label class="label" for="terminos-y-condiciones">Acepto términos y condiciones</label>
+            </div>
+        </div>
+    </form>
+</footer>
+
+
+</body>
+</html>

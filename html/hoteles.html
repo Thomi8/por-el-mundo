@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hoteles</title>
+        <link rel="shortcuit icon" href="../img/logo.jpg">
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+<body class="hotelesBody">
+    <header class="header">
+        <nav class="navbarGeneral">
+            <input type="checkbox" id="btn-menu">
+            <label for="btnMenu"><img src="../img/boton.png" class="btn" alt="btn"></label>
+            <ul class="navbar">
+                <li class="navbarLi"><a class="navbarLink" href="../index.html">Home</a></li>
+                <li class="navbarLi"><a class="navbarLink" href="vuelos.html">Vuelos</a></li>
+                <li class="navbarLi"><a class="navbarLink" href="hoteles.html">Hoteles</a></li>
+                <li class="navbarLi"><a class="navbarLink" href="contacto.html">Cuenta</a></li>
+                <li class="navbarLi"><a class="navbarLink" href="sobrenosotros.html">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="tituloHoteles">Hoteles</h1>
+        <section class="sectionHoteles">
+            <select name="origen" id="">
+                <div>
+                    <option value="0">Seleccione su hospedaje</option>
+                    <option value="1">Miami</option>
+                    <option value="2">Rio de Janeiro</option>
+                    <option value="3">Cancún</option>
+                    <option value="4">Barcelona</option>
+                    <option value="5">Orlando</option>
+                    <option value="6">Nueva York</option>
+                    <option value="7">Los ángeles</option>
+                    <option value="8">Roma</option>
+                    <option value="9">París</option>
+                    <option value="10">Argentina</option>
+                </div>
+            </select>
+
+            <br><br>
+
+            <form>
+                <label for="entrada">Entrada</label>
+                <input type="date" name="entrada" id="">
+                <label for="salida">Salida</label>
+                <input type="date" name="salida">
+
+                <select name="personas"> 
+                    <option value="0">Personas</option>
+                    <option value="1">Mayores de 18 años</option>
+                    <option value="2">Menores de 18 años</option>
+                    <option value="3">Bebés</option>
+                </select>
+
+                <input type="submit" value="Buscar">
+            </form>
+        </section>
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+</body>
+</html>

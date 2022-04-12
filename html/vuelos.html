@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vuelos</title>
+        <link rel="shortcuit icon" href="./img/logo.jpg">
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+
+<body class="vuelosBody">
+    <header class="header">
+        <nav class="navbarGeneral">
+            <input type="checkbox" id="btn-menu">
+            <label for="btnMenu"><img src="../img/boton.png" class="btn" alt="btn"></label>
+            <ul class="navbar">
+                <li class="navbarLi"><a class="navbarLink" href="../index.html">Home</a></li>
+                <li class="navbarLi"><a class="navbarLink" href="vuelos.html">Vuelos</a></li>
+                <li class="navbarLi"><a class="navbarLink" href="hoteles.html">Hoteles</a></li>
+                <li class="navbarLi"><a class="navbarLink" href="contacto.html">Cuenta</a></li>
+                <li class="navbarLi"><a class="navbarLink" href="sobrenosotros.html">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="todoVuelos">
+        <h1 class="vuelosTitle2">Vuelos</h1>
+        <section class="vuelosSection">
+            <h2 class="subtitulo4">Encontrá los mejores vuelos con reserva flexible.</h2>
+            <div class="vuelosDiv2">
+                <div class="inputVuelos">
+                    <input  type="radio" name="dia" value="1">
+                    <label for="">Dia</label>
+                    <input class="idaVuelta" type="radio" name="dia" class="vuelta" value="2">
+                    <label for="">Ida y vuelta</label>
+                </div>
+            </div>
+
+            <select class="select" name="origen">
+                <div>
+                    <option value="0">Seleccione su origen</option>
+                    <option value="1">Miami</option>
+                    <option value="2">Rio de Janeiro</option>
+                    <option value="3">Cancún</option>
+                    <option value="4">Barcelona</option>
+                    <option value="5">Orlando</option>
+                    <option value="6">Nueva York</option>
+                    <option value="7">Los ángeles</option>
+                    <option value="8">Roma</option>
+                    <option value="9">París</option>
+                    <option value="10">Argentina</option>
+                </div>
+            </select>
+
+            <select class="select" name="destino">
+                <div>
+                    <option value="0">Seleccione su destino</option>
+                    <option value="1">Miami</option>
+                    <option value="2">Rio de Janeiro</option>
+                    <option value="3">Cancún</option>
+                    <option value="4">Barcelona</option>
+                    <option value="5">Orlando</option>
+                    <option value="6">Nueva York</option>
+                    <option value="7">Los ángeles</option>
+                    <option value="8">Roma</option>
+                    <option value="9">París</option>
+                    <option value="10">Argentina</option>
+                </div>
+            </select>
+            
+            <form class="formVuelos">
+                <label class="salidaForm" for="salida">Salida</label>
+                <input class="data" type="date" name="salida" id="">
+                
+                <label class="regresoForm" for="regreso">Regreso</label>
+                <input class="data" type="date" name="regreso">
+
+                <select class="selectForm" name="personas"> 
+                    <option value="0">Personas</option>
+                    <option value="1">Mayores de 18 años</option>
+                    <option value="2">Menores de 18 años</option>
+                    <option value="3">Bebés</option>
+                </select>
+                
+                <input class="buscarForm" type="submit" value="Buscar">
+                <input type="reset" value="Limpiar">
+            </form>
+        </section>
+        
+    </main>
+    
+</body>
+</html>

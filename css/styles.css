@@ -1,0 +1,867 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(190, 190, 243) ;
+}
+
+.paises{
+    display: flex;
+}
+
+.paises {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+.titulo {
+    color: rgb(238, 15, 15) ;
+    background-color: rgb(190, 190, 243);
+    width: 200px;
+}
+
+.subtitulo {
+    color: black;
+    background-color: rgb(190, 190, 243);
+    width: 110px;
+}
+
+.transporte{
+    background-color: rgb(190, 190, 243);
+    border: 5px groove ;
+    width: 20px;
+}
+
+.actividades {
+    background-color: rgb(190, 190, 243);
+    border: 5px groove ;
+    width: 20px;
+}
+
+.asistencia{
+    background-color: rgb(190, 190, 243);
+    border: 5px groove ;
+    width: 20px;
+}
+
+.vuelos{
+    color: rgb(0, 0, 0);
+    background-color: rgb(190, 190, 243);
+    width: 75px;
+}
+
+.hoteles{
+    color: rgb(0, 0, 0);
+    background-color: birgb(190, 190, 243);
+    width: 80px;
+}
+
+.financiacion{
+    color: rgb(0, 0, 0);
+    width: 500px;
+    animation-name: animacion;
+    animation-iteration-count:infinite;
+    animation-timing-function: ease-out;
+    animation-duration: 5s;
+    animation-delay:2s;
+}
+
+.ahora12{
+    border: 4px solid rgb(86, 93, 202);
+    width: 20px;
+    text-align: center;
+    animation-name: animacion;
+    animation-iteration-count:infinite;
+    animation-timing-function: ease-out;
+    animation-duration: 5s;
+    animation-delay:2s;
+}
+
+.ahora18{
+    border: 4px solid rgb(86, 93, 202);
+    width: 20px;
+    text-align: center;
+    animation-name: animacion;
+    animation-iteration-count:infinite;
+    animation-timing-function: ease-out;
+    animation-duration: 5s;
+    animation-delay:2s;
+}
+
+.bbva{
+    border: 4px solid rgb(86, 93, 202);
+    width: 20px;
+    text-align: center;
+    animation-name: animacion;
+    animation-iteration-count:infinite;
+    animation-timing-function: ease-out;
+    animation-duration: 5s;
+    animation-delay:2s;
+}
+
+/* HEADER */
+
+.header{
+    width: 100%;
+    background: rgb(0, 0, 0);
+}
+
+#btn-menu{
+    display: none;
+}
+
+.btn{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid black;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background: rgba(0,0,0,0.2);
+}
+
+.navbar{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.navbarLi{
+    border-right: 1px solid black;
+}
+
+.navbarLi:hover {
+    background: rgba(255, 255, 255, 0.808);
+    transition: 0.5s;
+}
+
+.navbarLink{
+    display: block;
+    padding: 15px 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.navbarLink:hover{
+    transition: 0.5s;
+    color: black;
+}
+
+/* MAIN */
+
+.todo{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.titulo, .subtitulo{
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 60px;
+}
+
+.logo{
+    display: block;
+    margin: 0%;
+    width: 130px;
+    border-radius: 30%;
+    position: relative;
+    left: 50px;
+    bottom: 30px;
+}
+
+.opcionesDeViaje{
+    width: 90%;
+    margin: 2% 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.paquetes{
+    width: 7%;
+}
+
+.carrousel{
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.carrouselImg{
+    width: 150px;
+    height: 100px;
+}
+
+/* ESTILOS AL MODAL */
+
+.modal{
+    display: none;
+}
+
+.modal:target{
+    display: block;
+    position: fixed;
+    background: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal h3{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px 0px;
+}
+
+.imagen{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen a{
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.imagen a:nth-child(2){
+    margin: 0;
+    height: 100%;
+    flex-shrink: 2;
+}
+
+.imagen img{
+    width: 500px;
+    height: 100%;
+    max-width: 100%;
+    border: 7px solid white;
+    box-sizing: border-box;
+}
+
+.cerrar{
+    display: block;
+    background: white;
+    width: 25px;
+    height: 25px;
+    margin: 15px auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(255, 0, 0);
+    padding: 5px;
+    border-radius: 50%;
+    line-height: 25px;
+}
+
+/* SECTION VUELOS - HOTELES */
+
+.sectionVuelosHoteles{
+    width: 100%;
+}
+
+.vuelosDiv{
+    width: 100%;
+}
+
+.vuelosTitle{
+    text-align: center;
+    color: rgb(202, 84, 48);
+    margin: 15px 0px;
+}
+
+.vuelosList{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 40px;
+    list-style: none;
+    width: 90%;
+    margin: 0% 5%;
+}
+
+.vuelosListItem{
+    list-style: none;
+    width: 100%;
+    background: linear-gradient(rgb(177, 177, 235), white);
+}
+
+.miami{
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: height, width .5s;
+}
+
+.miami:hover{
+    height: 200px;
+    width: 350px;
+}
+
+.losAngeles{
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: height, width .5s;
+}
+
+.losAngeles:hover{
+    height: 200px;
+    width: 350px;
+}
+
+.cancun{
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: height, width .5s;
+}
+
+.cancun:hover{
+    height: 200px;
+    width: 350px;
+}
+
+
+.riodeJaneiro{
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: height, width .5s;
+}
+
+.riodeJaneiro:hover{
+    height: 200px;
+    width: 350px;
+}
+
+.hotelesDiv{
+    width: 100%;
+}
+
+.hotelesTitle{
+    text-align: center;
+    color: rgb(202, 84, 48);
+    margin: 15px 0px;
+}
+
+.hotelesUl{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 40px;
+    list-style: none;
+    width: 90%;
+    margin: 0% 5%;
+}
+
+.hotelesListItem{
+    list-style: none;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(rgb(177, 177, 235), white);
+}
+
+.cancun2{
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: height, width .5s;
+}
+
+.cancun2:hover{
+    height: 200px;
+    width: 350px;
+}
+
+.newYork{
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: height, width .5s;
+}
+
+
+.newYork:hover{
+    height: 200px;
+    width: 350px;
+}
+
+.orlando{
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: height, width .5s;
+}
+
+.orlando:hover{
+    height: 200px;
+    width: 350px;
+}
+
+.barcelona{
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: all .7s;
+}
+
+.barcelona:hover{
+    height: 200px;
+    width: 350px;
+}
+
+.titulares{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.enlace{
+    font-weight: 600;
+    color: rgb(255, 0, 0);
+}
+
+.infoPagos{
+    width: 100%;
+    margin: 5% 0%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    margin-top: 150px;
+    background-color: white;
+    animation-name: animacion;
+    animation-iteration-count:infinite;
+    animation-timing-function: ease-out;
+    animation-duration: 5s;
+}
+
+@keyframes animacion {
+    0% {
+        background-color:rgb(101, 101, 192);
+    } 
+    50% {
+        background-color: rgba(255, 255, 255, 0.493);
+    }
+    100% {
+        background-color: rgb(68, 68, 156);
+    }
+}
+
+/* Vuelos */
+
+.vuelosBody{
+    background-image: url(../img/vuelo.jpg);
+    background-size: cover;
+}
+
+.vuelosSection{
+    border: 2px dashed black;
+}
+
+.subtitulo4{
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+.vuelosTitle2{
+    text-align: center;
+    color: rgb(12, 12, 12);
+    margin-top: 2%;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.vuelosDiv2{
+    text-align: left;
+    margin: 20px;
+    font-size: 17px;
+}
+
+.inputVuelos{
+    margin-left: 15px;
+}
+
+.idaVuelta{
+    margin-left: 50px;
+}
+
+.vuelta{
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.select{
+    margin-left: 20px;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.formVuelos{
+    margin: 10px;
+}
+
+.salidaForm{
+    margin-left: 10px;
+    font-size: 17px;
+}
+
+.regresoForm{
+    margin-left: 25px;
+    font-size: 17px;
+}
+
+.data{
+    background-color:rgb(255, 255, 255);
+    color: red;
+}
+
+.selectForm{
+    margin-left: 30px;
+    margin-right: 40px;
+}
+
+.buscarForm{
+    margin-right: 10px;
+}
+
+/* HOTELES */
+
+.hotelesBody{
+    background-image: url(../img/hoteles.jpg);
+    background-size: cover;
+}
+
+.tituloHoteles{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 2%;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.sectionHoteles{
+    border: 2px dashed white;
+}
+
+/* CUENTA */
+
+.cuentaMain{
+    background-image: url(../img/oceano.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+/* Sobre nosostros */
+
+.nosotrosMain{
+    margin: 50px 20px;
+}
+
+.nosotrosBody{
+    background-image: url(../img/atardecer.jpg);
+    background-size: cover;
+}
+
+.nosDiv p{
+    text-align:center;
+    margin-top: 5px;
+    color: white;
+    background-color: black;
+    padding: 20px;
+    margin: 30px 100px;
+}
+
+.nosotrosTitle1{
+    text-align: center;
+    margin: 60px 650px 0px 650px;
+    color: white;
+    background-color: black;
+}
+
+.nosotrosTitle2{
+    text-align: center;
+    margin: 150px 650px 0px 650px;
+    color: white;
+    background-color: black;
+    
+}
+
+.nosotrosTitle3{
+    text-align: center;
+    margin-top: 70px;
+    color: white;
+    background-color:black;
+    margin: 150px 650px 0px 650px;
+}
+
+/* CONTACTO */
+
+.bodyCuenta{
+    margin: 0;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.cuentaMain{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cuentaMain h1{
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.tituloCuenta{
+    text-align: center;
+}
+
+.pCuenta{
+    text-align: center;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.pCuentaMail{
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.botonPrincipal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.ingresarDiv{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+    height: 2.5rem;
+    min-width: 350px;
+    outline: 0;
+    padding: 0 1rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: red;
+    margin-top: 15px;
+}
+
+.ingresar{
+    color: rgba(255, 255, 255, 0.911);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    background-color: red;
+    margin: 11px;
+}
+
+.registrateDiv{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+    height: 2.5rem;
+    min-width: 350px;
+    outline: 0;
+    padding: 0 1rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: red;
+}
+
+.registrate{
+    color: rgba(255, 255, 255, 0.911);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    background-color: red;
+    margin: 11px;
+}
+
+.divBlanco{
+    background-color: rgba(255, 255, 255, 0.87);
+    align-items: center;
+    margin: 70px 600px;
+    border-radius: 4px;
+    padding: 2%;
+}
+
+
+.reservasP{
+    font-size: 20px;
+    text-align:center;
+}
+
+.vouchers{
+    margin-top: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+img.btn-whatsapp {
+    display: block !important;
+    position: fixed;
+    z-index: 9999999;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    border-radius:100px !important;
+    width: 60px;
+    height: 60px;
+    }
+img.btn-whatsapp:hover{
+    border-radius:100px !important;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1); 
+    -moz-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
+    box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
+    transition-duration: 1s;
+    } 
+
+/* Footer */
+
+.footer{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 200px;
+}
+
+
+.footerDiv{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+.tituloFoo{
+    font-weight: 900;
+    font-size:large;
+    color: rgb(238, 13, 13);
+    height: 7vh;
+    text-align: center;
+}
+
+.labelForm{
+    text-align: center;
+}
+
+.inputDiv{
+    width: 100%;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    width: 30%;
+    margin: auto;
+}
+
+.terminos{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.label{
+    margin-left: 5px;
+}
+
+
+.divSubmit{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+}
+
+/* MOBILE - TABLET */
+
+@media only screen and (max-width: 768px) {
+
+    .logo {
+        display: block;
+        margin: 0%;
+        width: 56px;
+        border-radius: 30%;
+        position: relative;
+        left: 0px;
+        bottom: 0px;
+    }
+
+    .carrousel{
+        white-space: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+
+    .infoPagos{
+        width: 100%;
+        margin: 5% 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 150px;
+    }
+
+    .input{
+        width: 70%;
+    }
+}
+
+/* Laptop */
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+
+}
+
+/* Laptop L */
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px){
+
+}
