@@ -61,46 +61,25 @@ body {
 }
 
 .financiacion{
-    color: rgb(0, 0, 0);
     width: 500px;
-    animation-name: animacion;
-    animation-iteration-count:infinite;
-    animation-timing-function: ease-out;
-    animation-duration: 5s;
-    animation-delay:2s;
 }
 
 .ahora12{
     border: 4px solid rgb(86, 93, 202);
     width: 20px;
     text-align: center;
-    animation-name: animacion;
-    animation-iteration-count:infinite;
-    animation-timing-function: ease-out;
-    animation-duration: 5s;
-    animation-delay:2s;
 }
 
 .ahora18{
     border: 4px solid rgb(86, 93, 202);
     width: 20px;
     text-align: center;
-    animation-name: animacion;
-    animation-iteration-count:infinite;
-    animation-timing-function: ease-out;
-    animation-duration: 5s;
-    animation-delay:2s;
 }
 
 .bbva{
     border: 4px solid rgb(86, 93, 202);
     width: 20px;
     text-align: center;
-    animation-name: animacion;
-    animation-iteration-count:infinite;
-    animation-timing-function: ease-out;
-    animation-duration: 5s;
-    animation-delay:2s;
 }
 
 /* HEADER */
@@ -461,6 +440,7 @@ body {
     }
 }
 
+
 /* Vuelos */
 
 .vuelosBody{
@@ -602,7 +582,6 @@ body {
     margin: 150px 650px 0px 650px;
     color: white;
     background-color: black;
-    
 }
 
 .nosotrosTitle3{
