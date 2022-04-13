@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: rgb(190, 190, 243) ;
+     ;
 }
 
 .paises{
@@ -20,14 +20,19 @@ body {
 
 .titulo {
     color: rgb(238, 15, 15) ;
-    background-color: rgb(190, 190, 243);
+    background-color: ;
     width: 200px;
 }
 
 .subtitulo {
     color: black;
-    background-color: rgb(190, 190, 243);
+    background-color: ;
     width: 110px;
+}
+
+.colores1{
+    background-color: black;
+    color: white;
 }
 
 .transporte{
@@ -449,7 +454,11 @@ body {
 }
 
 .vuelosSection{
-    border: 2px dashed black;
+    background-color: white;
+    text-align: center;
+    margin: 0 400px;
+    padding: 20px;
+    border-radius: 5px;
 }
 
 .subtitulo4{
@@ -487,9 +496,9 @@ body {
 .select{
     margin-left: 20px;
     padding: 5px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    border: 2px solid white;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 5px;
     margin-bottom: 20px;
     font-size: 13px;
@@ -510,8 +519,8 @@ body {
 }
 
 .data{
-    background-color:rgb(255, 255, 255);
-    color: red;
+    border-radius: 2px solid black;
+    margin-left: 15px;
 }
 
 .selectForm{
@@ -539,8 +548,52 @@ body {
 }
 
 .sectionHoteles{
-    border: 2px dashed white;
+    background-color: white;
+    text-align: center;
+    margin: 0 400px;
+    padding: 20px;
+    border-radius: 5px;
 }
+
+.reservaHoteles{
+    margin-left: 10px;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.911);
+}
+
+.selectHoteles{
+    padding: 5px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+.formHoteles{
+    margin: 10px;
+}
+
+.entradaForm{
+    margin-right: 15px;
+    font-size: 17px;
+}
+
+.dataHoteles{
+    margin-right: 15px;
+}
+
+.salidaHoteles{
+    margin-left: 10px;
+    font-size: 17px;
+}
+
+.dataHotelesSalida{
+    margin-left: 15px;
+}
+
 
 /* CUENTA */
 

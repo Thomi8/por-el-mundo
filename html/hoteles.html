@@ -28,7 +28,8 @@
     <main>
         <h1 class="animate__animated animate__backInRight tituloHoteles">Hoteles</h1>
         <section class="sectionHoteles">
-            <select name="origen" id="">
+            <h2 class="reservaHoteles">Encontrá los mejores hoteles con reserva flexible.</h2>
+            <select class="selectHoteles" name="origen">
                 <div>
                     <option value="0">Seleccione su hospedaje</option>
                     <option value="1">Miami</option>
@@ -44,37 +45,27 @@
                 </div>
             </select>
 
-            <br><br>
+            <form class="formHoteles">
+                <label class="entradaForm" for="entrada">Entrada</label>
+                <input class="dataHoteles" type="date" name="entrada" id="">
+               
+               
+                <label class="salidaHoteles" for="salida">Salida</label>
+                <input class="dataHotelesSalida" type="date" name="salida">
 
-            <form>
-                <label for="entrada">Entrada</label>
-                <input type="date" name="entrada" id="">
-                <label for="salida">Salida</label>
-                <input type="date" name="salida">
-
-                <select name="personas"> 
+                <select class="selectForm" name="personas"> 
                     <option value="0">Personas</option>
                     <option value="1">Mayores de 18 años</option>
                     <option value="2">Menores de 18 años</option>
                     <option value="3">Bebés</option>
                 </select>
 
-                <input type="submit" value="Buscar">
+                <input class="buscarForm" type="submit" value="Buscar">
+                <input type="reset" value="Limpiar">
             </form>
         </section>
 
-
-
-
-
     </main>
-
-
-
-
-
-
-
 
 </body>
 </html>
