@@ -107,26 +107,6 @@
     display: flex;
 }
 
-/* .navbarLi{
-    border-right: 1px solid black;
-}
-
-.navbarLi:hover {
-    background: rgba(255, 255, 255, 0.808);
-    transition: 0.5s;
-}
-
-.navbarLink{
-    display: block;
-    padding: 15px 20px;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}
-
-.navbarLink:hover{
-    transition: 0.5s;
-    color: black;
-} */
 
 /* HEADER BOOTSTRAP */
 .navbar-collapse{
@@ -148,8 +128,6 @@
 .titulo, .subtitulo{
     display: block;
     margin: auto;
-    position: relative;
-    top: 60px;
 }
 
 .logo{
@@ -164,7 +142,7 @@
 
 .opcionesDeViaje{
     width: 90%;
-    margin: 2% 5%;
+    margin: 6% 5%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -253,7 +231,6 @@
     text-decoration: none;
     font-size: 25px;
     color: rgb(255, 0, 0);
-    padding: 5px;
     border-radius: 50%;
     line-height: 25px;
 }
@@ -456,7 +433,8 @@
 .vuelosSection{
     background-color: white;
     text-align: center;
-    margin: 0 400px;
+    width: 70%;
+    margin: auto;
     padding: 20px;
     border-radius: 5px;
 }
@@ -481,7 +459,11 @@
 }
 
 .inputVuelos{
-    margin-left: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .idaVuelta{
@@ -530,6 +512,7 @@
 
 .buscarForm{
     margin-right: 10px;
+    margin-top: 15px;
 }
 
 /* HOTELES */
@@ -601,6 +584,8 @@
     background-image: url(../img/oceano.jpg);
     background-size: cover;
     height: 100vh;
+    text-align: center;
+    padding-top: 20px;
 }
 
 /* Sobre nosostros */
@@ -614,6 +599,8 @@
     background-size: cover;
 }
 
+
+
 .nosDiv p{
     text-align:center;
     margin-top: 5px;
@@ -621,6 +608,7 @@
     background-color: black;
     padding: 20px;
     margin: 30px 100px;
+    border-radius: 10px;
 }
 
 .nosotrosTitle1{
@@ -628,6 +616,7 @@
     margin: 60px 650px 0px 650px;
     color: white;
     background-color: black;
+    border-radius: 10px;
 }
 
 .nosotrosTitle2{
@@ -635,6 +624,7 @@
     margin: 150px 650px 0px 650px;
     color: white;
     background-color: black;
+    border-radius: 10px;
 }
 
 .nosotrosTitle3{
@@ -643,6 +633,7 @@
     color: white;
     background-color:black;
     margin: 150px 650px 0px 650px;
+    border-radius: 10px;
 }
 
 /* CONTACTO */
@@ -657,11 +648,6 @@
     line-height: 1.25;
 }
 
-.cuentaMain{
-    margin: 0 auto;
-    text-align: center;
-}
-
 .cuentaMain h1{
     margin-bottom: 30px;
     font-size: 40px;
@@ -669,6 +655,7 @@
 
 .tituloCuenta{
     text-align: center;
+    margin-top: 20px;
 }
 
 .pCuenta{
@@ -754,7 +741,8 @@
 .divBlanco{
     background-color: rgba(255, 255, 255, 0.87);
     align-items: center;
-    margin: 70px 600px;
+    margin: 70px auto;
+    width: 30%;
     border-radius: 4px;
     padding: 2%;
 }
@@ -813,6 +801,12 @@ img.btn-whatsapp:hover{
     text-align: center;
 }
 
+.formSign{
+    width: 30%;
+    margin: auto;
+    margin-bottom: 80px;
+}
+
 .labelForm{
     text-align: center;
 }
@@ -851,15 +845,20 @@ img.btn-whatsapp:hover{
 }
 
 .redesDiv{
-    margin-top: 50px;
+    width: 100%;
     background-color: black;
-    padding: px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .tituloRedes{
     color: rgba(255, 255, 255, 0.911);
     text-align: center;
     margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .redes{
@@ -869,19 +868,53 @@ img.btn-whatsapp:hover{
     font-size: 1.5rem;
 }
 
+.hotel{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 7vh;
+    display: flex;
+}
+
+.hotelContacto{
+    bottom: 0;
+    width: 100%;
+    height: 7vh;
+    display: flex;
+}
+
+.hotelVuelosHTML{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 7vh;
+    display: flex;
+}
+
+.hotel2{
+    margin-left: 20%;
+    margin-top: 10px;
+}
+
 
 /* MOBILE - TABLET */
 
 @media only screen and (max-width: 768px) {
 
-    .logo {
-        display: block;
-        margin: 0%;
-        width: 56px;
-        border-radius: 30%;
-        position: relative;
-        left: 0px;
-        bottom: 0px;
+    /* HOME */
+
+    .select{
+        font-size: 13px;
+    }
+
+    .opcionesDeViaje{
+        flex-direction: column;
+        margin: 25px;
+    }
+
+    .modal:target{
+        width: 76%;
+        height: 76%;
     }
 
     .carrousel{
@@ -891,6 +924,40 @@ img.btn-whatsapp:hover{
         -ms-overflow-style: -ms-autohiding-scrollbar;
     }
 
+    .vuelosList{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .hotelesUl{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .financiacion{
+        width: 75%;
+        font-size: 21px;
+    }
+
+    .tituloFoo{
+        height: 17vh;
+    }
+
+    .formControl{
+        width: 140%;
+    }
+
+    .formText{
+        width: 160%;
+    }
+    
+    .form-label{
+        width: 130%;
+    }
     .infoPagos{
         width: 100%;
         margin: 5% 0%;
@@ -904,16 +971,69 @@ img.btn-whatsapp:hover{
     .input{
         width: 70%;
     }
+
+    .tituloRedes{
+        font-size: 10px;
+    }
+
+    /* HOTELES */
+
+    .sectionHoteles{
+        margin: 0 55px;
+    }
+
+    .salidaHoteles{
+        margin-left: 2%;
+        margin-top: 5%;
+    }
+
+    .selectForm{
+        margin-top: 5%;
+        font-size: 13px;
+    }
+
+    .tituloHoteles{
+        margin-bottom: 38px;
+    }
+
+
+    /* VUELOS */
+
+    .vuelosSection{
+        margin: 0 55px;
+    }
+
+    .subtitulo4{
+        font-size: 20px;
+    }
+
+    .formVuelos{
+        margin: 0;
+    }
+
+    .data{
+        font-size: 13px;
+    }
+
+    .regresoForm, .salidaForm{
+        font-size: 15px;
+    }
+
+    .vuelosTitle2{
+        font-size: 35px;
+    }
+
+    /* SOBRE NOSOTROS */
+
+    .nosotrosTitle1, .nosotrosTitle2, .nosotrosTitle3{
+        margin: 15%;
+    }
+
+    /* CONTACTO */
+
+    .divBlanco{
+        width: 70%;
+        margin: 30px 17%;
+    }
 }
 
-/* Laptop */
-
-@media only screen and (min-width: 769px) and (max-width: 1024px){
-
-}
-
-/* Laptop L */
-
-@media only screen and (min-width: 1025px) and (max-width: 1440px){
-
-}
