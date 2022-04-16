@@ -1037,8 +1037,8 @@ img.btn-whatsapp:hover{
         color: black;
     }
 
-    .cuentaMain{
-        color: rgba(255, 255, 255, 0.897);
+    .pCuentaMail, .pCuenta{
+        color: white;
     }
 }
 
