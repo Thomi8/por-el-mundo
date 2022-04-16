@@ -1034,6 +1034,11 @@ img.btn-whatsapp:hover{
     .divBlanco{
         width: 70%;
         margin: 30px 17%;
+        color: black;
+    }
+
+    .cuentaMain{
+        color: rgba(255, 255, 255, 0.897);
     }
 }
 
