@@ -121,10 +121,6 @@
 
 /* MAIN */
 
-.todo{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-}
-
 .titulo, .subtitulo{
     display: block;
     margin: auto;
@@ -135,9 +131,6 @@
     margin: 0%;
     width: 130px;
     border-radius: 30%;
-    position: relative;
-    left: 50px;
-    bottom: 30px;
 }
 
 .opcionesDeViaje{
@@ -224,8 +217,8 @@
 .cerrar{
     display: block;
     background: white;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 28px;
     margin: 15px auto;
     text-align: center;
     text-decoration: none;
@@ -270,47 +263,26 @@
 .miami{
     border: 2px solid black;
     border-radius: 5px;
-    transition: height, width .5s;
 }
 
-.miami:hover{
-    height: 200px;
-    width: 350px;
-}
 
 .losAngeles{
     border: 2px solid black;
     border-radius: 5px;
-    transition: height, width .5s;
 }
 
-.losAngeles:hover{
-    height: 200px;
-    width: 350px;
-}
 
 .cancun{
     border: 2px solid black;
     border-radius: 5px;
-    transition: height, width .5s;
-}
-
-.cancun:hover{
-    height: 200px;
-    width: 350px;
 }
 
 
 .riodeJaneiro{
     border: 2px solid black;
     border-radius: 5px;
-    transition: height, width .5s;
 }
 
-.riodeJaneiro:hover{
-    height: 200px;
-    width: 350px;
-}
 
 .hotelesDiv{
     width: 100%;
@@ -342,47 +314,26 @@
 .cancun2{
     border: 2px solid black;
     border-radius: 5px;
-    transition: height, width .5s;
 }
 
-.cancun2:hover{
-    height: 200px;
-    width: 350px;
-}
 
 .newYork{
     border: 2px solid black;
     border-radius: 5px;
-    transition: height, width .5s;
 }
 
-
-.newYork:hover{
-    height: 200px;
-    width: 350px;
-}
 
 .orlando{
     border: 2px solid black;
     border-radius: 5px;
-    transition: height, width .5s;
 }
 
-.orlando:hover{
-    height: 200px;
-    width: 350px;
-}
 
 .barcelona{
     border: 2px solid black;
     border-radius: 5px;
-    transition: all .7s;
 }
 
-.barcelona:hover{
-    height: 200px;
-    width: 350px;
-}
 
 .titulares{
     background-color: rgb(0, 0, 0);
@@ -903,6 +854,10 @@ img.btn-whatsapp:hover{
 
     /* HOME */
 
+    .logo{
+        width: 100px;
+    }
+
     .select{
         font-size: 13px;
     }
@@ -913,9 +868,10 @@ img.btn-whatsapp:hover{
     }
 
     .modal:target{
-        width: 76%;
-        height: 76%;
+        width: 100%;
+        height: 100%;
     }
+
 
     .carrousel{
         white-space: nowrap;
