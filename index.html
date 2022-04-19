@@ -55,109 +55,40 @@
     <main class="todo">
         <h1 class="animate__animated animate__bounceInDown titulo">Por el mundo</h1>
         <h3 class="subtitulo">Viajá seguro</h3>
-        <div class="opcionesDeViaje">
-            <select class="colores1" name="transportes" id="transportes">
-                <option value="0">Transportes</option>
-                <option value="1">Autos</option>
-                <option value="2">Camionetas</option>
-                <option value="3">Colectivos</option>
-                <option value="4">Motos</option>
-            </select>
-            <select class="colores1" name="actividades" id="actividades">
-                <option value="0">Actividades</option>
-                <option value="1">Miami</option>
-                <option value="2">Las Vegas</option>
-                <option value="3">Paris</option>
-                <option value="4">Barcelona</option>
-                <option value="5">Roma</option>
-            </select>
-            <select class="colores1" name="paquetes" id="paquetes" class="paquetes">
-                <option value="0">Paquetes</option>
-                <option value="1">Armá tu paquete</option>
-                <option value="2">Paquetes recomendados</option>
-            </select>
-            <select class="colores1" name="promos" id="promos">
-                <option value="0">Promociones</option>
-                <option value="1">Vuelos</option>
-                <option value="2">Vehículos</option>
-                <option value="3">Hospedaje</option>
-            </select>
-        </div>
-        
 
-        <div class="carrousel">
-            <a href="#img1"><img class="carrouselImg" src="./img/miami.jpg" alt="miami"></a>
-            <a href="#img2"><img class="carrouselImg" src="./img/fotos/barcelona.jpg" alt="barcelona"></a>
-            <a href="#img3"><img class="carrouselImg" src="./img/fotos/los angeles.jpg" alt="losangeles"></a>
-            <a href="#img4"><img class="carrouselImg" src="./img/fotos/paris.jpg" alt="paris"></a>
-            <a href="#img5"><img class="carrouselImg" src="./img/fotos/rio de janeiro.jpg" alt="rio"></a>
-            <a href="#img6"><img class="carrouselImg" src="./img/fotos/roma.jpg" alt="roma"></a>
-            <a href="#img7"><img class="carrouselImg" src="./img/fotos/rusia.jpg" alt="rusia"></a>
-        </div>
-
-        <div class="modal" id="img1">
-            <h3>Paisaje 1</h3>
-            <div class="imagen">
-                <a href="#img7">&#60;</a>
-                <a href="#img2"><img src="img/miami.jpg"></a>
-                <a href="#img2">></a>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/barcelona.jpg" class="d-block w-101" alt="barcelona">
+              </div>
+              <div class="carousel-item">
+                <img src="/img/miami.jpg" class="d-block w-101" alt="miami">
+              </div>
+              <div class="carousel-item">
+                <img src="/img/new york.jpg" class="d-block w-101" alt="ny">
+              </div>
+              <div class="carousel-item">
+                <img src="/img/los angeles fondo.jpg" class="d-block w-101" alt="los angeles">
+              </div>
+              <div class="carousel-item">
+                <img src="/img/orlando.jpg" class="d-block w-101" alt="orlando">
+              </div>
+              <div class="carousel-item">
+                <img src="/img/fotos/roma.jpg" class="d-block w-101" alt="roma">
+              </div>
+              <div class="carousel-item">
+                <img src="/img/fotos/paris.jpg" class="d-block w-101" alt="paris">
+              </div>
             </div>
-            <a class="cerrar" href="">X</a>
-        </div>
-        <div class="modal" id="img2">
-            <h3>Paisaje 2</h3>
-            <div class="imagen">
-                <a href="#img1">&#60;</a>
-                <a href="#img3"><img src="img/fotos/barcelona.jpg"></a>
-                <a href="#img3">></a>
-            </div>
-            <a class="cerrar" href="">X</a>
-        </div>
-        <div class="modal" id="img3">
-            <h3>Paisaje 3</h3>
-            <div class="imagen">
-                <a href="#img2">&#60;</a>
-                <a href="#img4"><img src="img/fotos/los angeles.jpg"></a>
-                <a href="#img4">></a>
-            </div>
-            <a class="cerrar" href="">X</a>
-        </div>
-        <div class="modal" id="img4">
-            <h3>Paisaje 4</h3>
-            <div class="imagen">
-                <a href="#img3">&#60;</a>
-                <a href="#img5"><img src="img/fotos/paris.jpg"></a>
-                <a href="#img5">></a>
-            </div>
-            <a class="cerrar" href="">X</a>
-        </div>
-        <div class="modal" id="img5">
-            <h3>Paisaje 5</h3>
-            <div class="imagen">
-                <a href="#img4">&#60;</a>
-                <a href="#img6"><img src="img/fotos/rio de janeiro.jpg"></a>
-                <a href="#img6">></a>
-            </div>
-            <a class="cerrar" href="">X</a>
-        </div>
-        <div class="modal" id="img6">
-            <h3>Paisaje 6</h3>
-            <div class="imagen">
-                <a href="#img5">&#60;</a>
-                <a href="#img7"><img src="img/fotos/roma.jpg"></a>
-                <a href="#img7">></a>
-            </div>
-            <a class="cerrar" href="">X</a>
-        </div>
-        <div class="modal" id="img7">
-            <h3>Paisaje 7</h3>
-            <div class="imagen">
-                <a href="#img6">&#60;</a>
-                <a href="#img1"><img src="img/fotos/rusia.jpg"></a>
-                <a href="#img1">></a>
-            </div>
-            <a class="cerrar" href="">X</a>
-        </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
         <section class="sectionVuelosHoteles">
             <div class="vuelosDiv">

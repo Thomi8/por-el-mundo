@@ -145,22 +145,22 @@
     width: 7%;
 }
 
-.carrousel{
-    width: 90%;
-    margin: auto;
-    padding: 20px;
-    box-sizing: border-box;
-    list-style: none;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    gap: 5px;
+
+/* CAROUSEL */
+
+.d-block{
+    height: 95vh;
+    width: 100%;
 }
 
-.carrouselImg{
-    width: 150px;
-    height: 100px;
+.w-101{
+    margin: 5% 0%;
 }
+
+.carousel-fade .carousel-item{
+    transition: 1s;
+}
+
 
 /* ESTILOS AL MODAL */
 
@@ -872,12 +872,8 @@ img.btn-whatsapp:hover{
         height: 100%;
     }
 
-
-    .carrousel{
-        white-space: nowrap;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        -ms-overflow-style: -ms-autohiding-scrollbar;
+    .d-block{
+        height: 40vh;
     }
 
     .vuelosList{
