@@ -1,0 +1,830 @@
+@import "./variables";
+
+/* HEADER */
+/* HEADER BOOTSTRAP */
+/* MAIN */
+/* CAROUSEL */
+/* ESTILOS AL MODAL */
+/* SECTION VUELOS - HOTELES */
+// @keyframes "animacion" {
+// 	0% {
+// 		background-color: #6565c0;
+// 	}
+// 	50% {
+// 		background-color: rgba(255, 255, 255, 0.493);
+// 	}
+// 	100% {
+// 		background-color: #44449c;
+// 	}
+// }
+/* Vuelos */
+/* HOTELES */
+/* CUENTA */
+/* Sobre nosostros */
+/* CONTACTO */
+/* Footer */
+/* MOBILE - TABLET */
+/* HOME */
+/* HOTELES */
+/* VUELOS */
+/* SOBRE NOSOTROS */
+/* CONTACTO */
+* {
+	margin: 0;
+	padding: 0;
+}
+.paises {
+	display: flex;
+}
+.titulo {
+	color: $title-color;
+	text-align: center;
+	display: block;
+	margin: auto;
+}
+.subtitulo {
+	color: black;
+	text-align: center;
+	display: block;
+	margin: auto;
+}
+.colores1 {
+	background-color: black;
+	color: white;
+}
+.transporte {
+	background-color: #bebef3;
+	border: 5px groove;
+	width: 20px;
+}
+.actividades {
+	background-color: #bebef3;
+	border: 5px groove;
+	width: 20px;
+}
+.asistencia {
+	background-color: #bebef3;
+	border: 5px groove;
+	width: 20px;
+}
+.vuelos {
+	color: black;
+	background-color: #bebef3;
+	width: 75px;
+}
+.hoteles {
+	color: black;
+	background-color: birgb(190, 190, 243);
+	width: 80px;
+}
+.financiacion {
+	width: 500px;
+}
+.ahora12 {
+	border: 4px solid #565dca;
+	width: 20px;
+	text-align: center;
+}
+.ahora18 {
+	border: 4px solid #565dca;
+	width: 20px;
+	text-align: center;
+}
+.bbva {
+	border: 4px solid #565dca;
+	width: 20px;
+	text-align: center;
+}
+#btn-menu {
+	display: none;
+}
+.btn {
+	display: none;
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+	border-right: 1px solid black;
+	&:hover {
+		cursor: pointer;
+		background: rgba(0, 0, 0, 0.2);
+	}
+}
+.navbar {
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	display: flex;
+}
+.navbar-collapse {
+	align-items: end;
+}
+.navbar-dark {
+	.navbar-nav {
+		.nav-link {
+			color: white;
+			font-size: .9rem;
+			margin: 5px 15px;
+		}
+	}
+}
+.logo {
+	display: block;
+	margin: 0%;
+	width: 130px;
+	border-radius: 30%;
+}
+.opcionesDeViaje {
+	width: 90%;
+	margin: 6% 5%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.paquetes {
+	width: 7%;
+}
+.d-block {
+	height: 100vh;
+	width: 100%;
+}
+.w-101 {
+	margin: 5% 0%;
+}
+.carousel-fade {
+	.carousel-item {
+		transition: 1s;
+	}
+}
+.modal {
+	display: none;
+	&:target {
+		display: block;
+		position: fixed;
+		background: rgba(0, 0, 0, 0.8);
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	h3 {
+		color: white;
+		font-size: 30px;
+		text-align: center;
+		margin: 15px 0px;
+	}
+}
+.imagen {
+	width: 100%;
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	a {
+		color: white;
+		font-size: 40px;
+		text-decoration: none;
+		margin: 0 10px;
+		&:nth-child(2) {
+			margin: 0;
+			height: 100%;
+			flex-shrink: 2;
+		}
+	}
+	img {
+		width: 500px;
+		height: 100%;
+		max-width: 100%;
+		border: 7px solid white;
+		box-sizing: border-box;
+	}
+}
+.cerrar {
+	display: block;
+	background: white;
+	width: 30px;
+	height: 28px;
+	margin: 15px auto;
+	text-align: center;
+	text-decoration: none;
+	font-size: 25px;
+	color: red;
+	border-radius: 50%;
+	line-height: 25px;
+}
+.sectionVuelosHoteles {
+	width: 100%;
+}
+.vuelosDiv {
+	width: 100%;
+}
+.vuelosTitle {
+	text-align: center;
+	color: #ca5430;
+	margin: 15px 0px;
+}
+.vuelosList {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-template-rows: auto auto;
+	gap: 40px;
+	list-style: none;
+	width: 90%;
+	margin: 0% 5%;
+}
+.vuelosListItem {
+	list-style: none;
+	width: 100%;
+	background: linear-gradient(#b1b1eb, white);
+}
+.miami {
+	border: 2px solid black;
+	border-radius: 5px;
+}
+.losAngeles {
+	border: 2px solid black;
+	border-radius: 5px;
+}
+.cancun {
+	border: 2px solid black;
+	border-radius: 5px;
+}
+.riodeJaneiro {
+	border: 2px solid black;
+	border-radius: 5px;
+}
+.hotelesDiv {
+	width: 100%;
+}
+.hotelesTitle {
+	text-align: center;
+	color: #ca5430;
+	margin: 15px 0px;
+}
+.hotelesUl {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-template-rows: auto auto;
+	gap: 40px;
+	list-style: none;
+	width: 90%;
+	margin: 0% 5%;
+}
+.hotelesListItem {
+	list-style: none;
+	width: 100%;
+	color: black;
+	background: linear-gradient(#b1b1eb, white);
+}
+.cancun2 {
+	border: 2px solid black;
+	border-radius: 5px;
+}
+.newYork {
+	border: 2px solid black;
+	border-radius: 5px;
+}
+.orlando {
+	border: 2px solid black;
+	border-radius: 5px;
+}
+.barcelona {
+	border: 2px solid black;
+	border-radius: 5px;
+}
+.titulares {
+	background-color: black;
+	color: white;
+}
+.enlace {
+	font-weight: 600;
+	color: red;
+}
+.infoPagos {
+	width: 100%;
+	margin: 5% 0%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-weight: 700;
+	margin-top: 150px;
+	background-color: white;
+	animation-name: animacion;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-out;
+	animation-duration: 5s;
+}
+.vuelosBody {
+	background-image: url(../img/vuelo.jpg);
+	background-size: cover;
+}
+.vuelosSection {
+	background-color: white;
+	text-align: center;
+	width: 70%;
+	margin: auto;
+	padding: 20px;
+	border-radius: 5px;
+}
+.subtitulo4 {
+	margin-left: 10px;
+	font-size: 25px;
+}
+.vuelosTitle2 {
+	text-align: center;
+	color: #0c0c0c;
+	margin-top: 2%;
+	font-size: 50px;
+	margin-bottom: 50px;
+}
+.vuelosDiv2 {
+	text-align: left;
+	margin: 20px;
+	font-size: 17px;
+}
+.inputVuelos {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+.idaVuelta {
+	margin-left: 50px;
+}
+.vuelta {
+	margin-left: 15px;
+	margin-top: 20px;
+}
+.select {
+	margin-left: 20px;
+	padding: 5px;
+	background-color: black;
+	color: white;
+	border: 2px solid black;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	font-size: 13px;
+}
+.formVuelos {
+	margin: 10px;
+}
+.salidaForm {
+	margin-left: 10px;
+	font-size: 17px;
+}
+.regresoForm {
+	margin-left: 25px;
+	font-size: 17px;
+}
+.data {
+	border-radius: 2px solid black;
+	margin-left: 15px;
+}
+.selectForm {
+	margin-left: 30px;
+	margin-right: 40px;
+}
+.buscarForm {
+	margin-right: 10px;
+	margin-top: 15px;
+}
+.hotelesBody {
+	background-image: url(../img/hoteles.jpg);
+	background-size: cover;
+	box-sizing: cover;
+}
+.tituloHoteles {
+	text-align: center;
+	color: white;
+	margin-top: 2%;
+	font-size: 50px;
+	margin-bottom: 50px;
+}
+.sectionHoteles {
+	background-color: white;
+	text-align: center;
+	margin: 0 400px;
+	padding: 20px;
+	border-radius: 5px;
+}
+.reservaHoteles {
+	margin-left: 10px;
+	font-size: 25px;
+	color: rgba(0, 0, 0, 0.911);
+}
+.selectHoteles {
+	padding: 5px;
+	background-color: black;
+	color: white;
+	border: 2px solid white;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	font-size: 13px;
+	margin-top: 25px;
+}
+.formHoteles {
+	margin: 10px;
+}
+.entradaForm {
+	margin-right: 15px;
+	font-size: 17px;
+}
+.dataHoteles {
+	margin-right: 15px;
+}
+.salidaHoteles {
+	margin-left: 10px;
+	font-size: 17px;
+}
+.dataHotelesSalida {
+	margin-left: 15px;
+}
+.cuentaMain {
+	background-image: url(../img/oceano.jpg);
+	background-size: cover;
+	height: 100vh;
+	text-align: center;
+	padding-top: 20px;
+	h1 {
+		margin-bottom: 30px;
+		font-size: 40px;
+	}
+}
+.nosotrosMain {
+	margin: 50px 20px;
+}
+.nosotrosBody {
+	background-image: url(../img/atardecer.jpg);
+	background-size: cover;
+}
+.nosDiv {
+	p {
+		text-align: center;
+		margin-top: 5px;
+		color: white;
+		background-color: black;
+		padding: 20px;
+		margin: 30px 100px;
+		border-radius: 10px;
+	}
+}
+.nosotrosTitle1 {
+	text-align: center;
+	margin: 60px 650px 0px 650px;
+	color: white;
+	background-color: black;
+	border-radius: 10px;
+}
+.nosotrosTitle2 {
+	text-align: center;
+	margin: 150px 650px 0px 650px;
+	color: white;
+	background-color: black;
+	border-radius: 10px;
+}
+.nosotrosTitle3 {
+	text-align: center;
+	margin-top: 70px;
+	color: white;
+	background-color: black;
+	margin: 150px 650px 0px 650px;
+	border-radius: 10px;
+}
+.bodyCuenta {
+	margin: 0;
+	font-stretch: normal;
+	font-style: normal;
+	letter-spacing: normal;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.25;
+}
+.tituloCuenta {
+	text-align: center;
+	margin-top: 20px;
+}
+.pCuenta {
+	text-align: center;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+.pCuentaMail {
+	font-size: 24px;
+	font-weight: 600;
+	text-align: center;
+	margin-top: 40px;
+}
+.botonPrincipal {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20px;
+}
+.ingresarDiv {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1.25;
+	border-radius: 20px;
+	cursor: pointer;
+	display: inline-block;
+	height: 2.5rem;
+	min-width: 350px;
+	outline: 0;
+	padding: 0 1rem;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: red;
+	margin-top: 15px;
+}
+.ingresar {
+	color: rgba(255, 255, 255, 0.911);
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+	text-align: center;
+	border: none;
+	background-color: red;
+	margin: 11px;
+}
+.registrateDiv {
+	margin-top: 20px;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1.25;
+	border-radius: 20px;
+	cursor: pointer;
+	display: inline-block;
+	height: 2.5rem;
+	min-width: 350px;
+	outline: 0;
+	padding: 0 1rem;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: red;
+}
+.registrate {
+	color: rgba(255, 255, 255, 0.911);
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+	text-align: center;
+	border: none;
+	background-color: red;
+	margin: 11px;
+}
+.divBlanco {
+	background-color: rgba(255, 255, 255, 0.87);
+	align-items: center;
+	margin: 70px auto;
+	width: 30%;
+	border-radius: 4px;
+	padding: 2%;
+}
+.reservasP {
+	font-size: 20px;
+	text-align: center;
+}
+.vouchers {
+	margin-top: 30px;
+	font-size: 20px;
+	text-align: center;
+}
+img.btn-whatsapp {
+	display: block !important;
+	position: fixed;
+	z-index: 9999999;
+	bottom: 20px;
+	right: 20px;
+	cursor: pointer;
+	border-radius: 100px !important;
+	width: 60px;
+	height: 60px;
+	&:hover {
+		border-radius: 100px !important;
+		-webkit-box-shadow: 0px 0px 15px 0px #075e54;
+		-moz-box-shadow: 0px 0px 15px 0px #075e54;
+		box-shadow: 0px 0px 15px 0px #075e54;
+		transition-duration: 1s;
+	}
+}
+.footer {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	margin-top: 200px;
+}
+.footerDiv {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin: auto;
+}
+.tituloFoo {
+	font-weight: 900;
+	font-size: large;
+	color: #ee0d0d;
+	height: 7vh;
+	text-align: center;
+}
+.formSign {
+	width: 30%;
+	margin: auto;
+	margin-bottom: 80px;
+}
+.labelForm {
+	text-align: center;
+}
+.inputDiv {
+	width: 100%;
+	margin-bottom: 25px;
+	display: flex;
+	flex-direction: column;
+}
+.input {
+	width: 30%;
+	margin: auto;
+}
+.terminos {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	align-items: center;
+	margin-top: 20px;
+}
+.label {
+	margin-left: 5px;
+}
+.divSubmit {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 70%;
+	margin: auto;
+}
+.redesDiv {
+	width: 100%;
+	background-color: black;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.tituloRedes {
+	color: rgba(255, 255, 255, 0.911);
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+.redes {
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	font-size: 1.5rem;
+}
+.hotel {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 7vh;
+	display: flex;
+}
+.hotelContacto {
+	bottom: 0;
+	width: 100%;
+	height: 7vh;
+	display: flex;
+}
+.hotelVuelosHTML {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 7vh;
+	display: flex;
+}
+.hotel2 {
+	margin-left: 20%;
+	margin-top: 10px;
+}
+@media only screen and (max-width: 768px) {
+	.logo {
+		width: 100px;
+	}
+	.select {
+		font-size: 13px;
+	}
+	.opcionesDeViaje {
+		flex-direction: column;
+		margin: 25px;
+	}
+	.modal {
+		&:target {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.d-block {
+		height: 40vh;
+	}
+	.vuelosList {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		width: 80%;
+	}
+	.hotelesUl {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		width: 80%;
+	}
+	.financiacion {
+		width: 75%;
+		font-size: 21px;
+	}
+	.tituloFoo {
+		height: 17vh;
+	}
+	.formControl {
+		width: 140%;
+	}
+	.formText {
+		width: 160%;
+	}
+	.form-label {
+		width: 130%;
+	}
+	.infoPagos {
+		width: 100%;
+		margin: 5% 0%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		margin-top: 150px;
+	}
+	.input {
+		width: 70%;
+	}
+	.tituloRedes {
+		font-size: 10px;
+	}
+	.sectionHoteles {
+		margin: 28px 55px;
+	}
+	.salidaHoteles {
+		margin-left: 2%;
+		margin-top: 5%;
+	}
+	.selectForm {
+		margin-top: 5%;
+		font-size: 13px;
+	}
+	.tituloHoteles {
+		margin-bottom: 38px;
+	}
+	.vuelosSection {
+		margin: 0 55px;
+	}
+	.subtitulo4 {
+		font-size: 20px;
+	}
+	.formVuelos {
+		margin: 0;
+	}
+	.data {
+		font-size: 13px;
+	}
+	.regresoForm {
+		font-size: 15px;
+	}
+	.salidaForm {
+		font-size: 15px;
+	}
+	.vuelosTitle2 {
+		font-size: 35px;
+	}
+	.nosotrosTitle1 {
+		margin: 15%;
+	}
+	.nosotrosTitle2 {
+		margin: 15%;
+	}
+	.nosotrosTitle3 {
+		margin: 15%;
+	}
+	.divBlanco {
+		width: 70%;
+		margin: 30px 17%;
+		color: black;
+	}
+	.pCuentaMail {
+		color: white;
+	}
+	.pCuenta {
+		color: white;
+	}
+}
