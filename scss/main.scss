@@ -1,34 +1,7 @@
 @import "./variables";
+@import "./map";
 
 /* HEADER */
-/* HEADER BOOTSTRAP */
-/* MAIN */
-/* CAROUSEL */
-/* ESTILOS AL MODAL */
-/* SECTION VUELOS - HOTELES */
-// @keyframes "animacion" {
-// 	0% {
-// 		background-color: #6565c0;
-// 	}
-// 	50% {
-// 		background-color: rgba(255, 255, 255, 0.493);
-// 	}
-// 	100% {
-// 		background-color: #44449c;
-// 	}
-// }
-/* Vuelos */
-/* HOTELES */
-/* CUENTA */
-/* Sobre nosostros */
-/* CONTACTO */
-/* Footer */
-/* MOBILE - TABLET */
-/* HOME */
-/* HOTELES */
-/* VUELOS */
-/* SOBRE NOSOTROS */
-/* CONTACTO */
 * {
 	margin: 0;
 	padding: 0;
@@ -36,6 +9,8 @@
 .paises {
 	display: flex;
 }
+
+/* MAIN */
 .titulo {
 	color: $title-color;
 	text-align: center;
@@ -47,25 +22,6 @@
 	text-align: center;
 	display: block;
 	margin: auto;
-}
-.colores1 {
-	background-color: black;
-	color: white;
-}
-.transporte {
-	background-color: #bebef3;
-	border: 5px groove;
-	width: 20px;
-}
-.actividades {
-	background-color: #bebef3;
-	border: 5px groove;
-	width: 20px;
-}
-.asistencia {
-	background-color: #bebef3;
-	border: 5px groove;
-	width: 20px;
 }
 .vuelos {
 	color: black;
@@ -130,7 +86,7 @@
 .logo {
 	display: block;
 	margin: 0%;
-	width: 130px;
+	width: 100px;
 	border-radius: 30%;
 }
 .opcionesDeViaje {
@@ -150,6 +106,8 @@
 .w-101 {
 	margin: 5% 0%;
 }
+
+/* CAROUSEL */
 .carousel-fade {
 	.carousel-item {
 		transition: 1s;
@@ -211,9 +169,13 @@
 	border-radius: 50%;
 	line-height: 25px;
 }
+
+/* SECTION VUELOS - HOTELES */
 .sectionVuelosHoteles {
 	width: 100%;
 }
+
+/* Vuelos */
 .vuelosDiv {
 	width: 100%;
 }
@@ -222,7 +184,8 @@
 	color: #ca5430;
 	margin: 15px 0px;
 }
-.vuelosList {
+
+@mixin vuelosList{
 	display: grid;
 	grid-template-columns: auto auto auto auto;
 	grid-template-rows: auto auto;
@@ -230,6 +193,9 @@
 	list-style: none;
 	width: 90%;
 	margin: 0% 5%;
+}
+.vuelosList {
+	@include vuelosList;
 }
 .vuelosListItem {
 	list-style: none;
@@ -394,6 +360,8 @@
 	background-size: cover;
 	box-sizing: cover;
 }
+
+/* HOTELES */
 .tituloHoteles {
 	text-align: center;
 	color: white;
@@ -451,6 +419,8 @@
 		font-size: 40px;
 	}
 }
+
+/* Sobre nosostros */
 .nosotrosMain {
 	margin: 50px 20px;
 }
@@ -471,11 +441,12 @@
 }
 .nosotrosTitle1 {
 	text-align: center;
-	margin: 60px 650px 0px 650px;
+	margin: 60px 600px 0px 600px;
 	color: white;
 	background-color: black;
 	border-radius: 10px;
 }
+
 .nosotrosTitle2 {
 	text-align: center;
 	margin: 150px 650px 0px 650px;
@@ -491,6 +462,8 @@
 	margin: 150px 650px 0px 650px;
 	border-radius: 10px;
 }
+
+/* CUENTA */
 .bodyCuenta {
 	margin: 0;
 	font-stretch: normal;
@@ -521,6 +494,8 @@
 	align-items: center;
 	margin-top: 20px;
 }
+
+/* CONTACTO */
 .ingresarDiv {
 	font-size: 16px;
 	font-weight: 600;
@@ -612,6 +587,8 @@ img.btn-whatsapp {
 		transition-duration: 1s;
 	}
 }
+
+/* Footer */
 .footer {
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	margin-top: 200px;
@@ -709,9 +686,11 @@ img.btn-whatsapp {
 	margin-left: 20%;
 	margin-top: 10px;
 }
+
+/* MOBILE - TABLET */
 @media only screen and (max-width: 768px) {
 	.logo {
-		width: 100px;
+		width: 75px;
 	}
 	.select {
 		font-size: 13px;
@@ -815,6 +794,12 @@ img.btn-whatsapp {
 	}
 	.nosotrosTitle3 {
 		margin: 15%;
+	}
+	.nosDiv {
+		p {
+			width: 65%;
+			margin: 30px 65px;
+		}
 	}
 	.divBlanco {
 		width: 70%;
