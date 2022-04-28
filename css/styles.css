@@ -263,7 +263,10 @@
 
 .vuelosBody {
   background-image: url(../img/vuelo.jpg);
-  background-size: cover; }
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; }
 
 .vuelosSection {
   background-color: white;
@@ -339,7 +342,9 @@
 .hotelesBody {
   background-image: url(../img/hoteles.jpg);
   background-size: cover;
-  box-sizing: cover; }
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; }
 
 /* HOTELES */
 .tituloHoteles {
@@ -634,7 +639,7 @@ img.btn-whatsapp {
   font-size: 1.5rem; }
 
 .hotel {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   width: 100%;
   height: 7vh;
