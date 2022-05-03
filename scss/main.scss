@@ -692,7 +692,7 @@ img.btn-whatsapp {
 	margin-top: 10px;
 }
 
-/* MOBILE - TABLET */
+/* MOBILE */
 @media only screen and (max-width: 768px) {
 	.logo {
 		width: 75px;
@@ -772,7 +772,7 @@ img.btn-whatsapp {
 		margin-bottom: 38px;
 	}
 	.vuelosSection {
-		margin: 0 55px;
+		margin: 0 70px;
 	}
 	.subtitulo4 {
 		font-size: 20px;
@@ -817,5 +817,18 @@ img.btn-whatsapp {
 	}
 	.pCuenta {
 		color: white;
+	}
+}
+
+/* TABLET */
+@media only screen and (min-width: 768px){
+	.vuelosSection {
+		margin: 0 110px;
+	}
+	.nosDiv {
+		p {
+			width: 80%;
+			margin: 30px 65px;
+		}
 	}
 }
