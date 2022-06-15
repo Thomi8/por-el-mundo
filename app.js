@@ -1,3 +1,13 @@
+let usuario1 = prompt("Ingresa tu nombre y apellido");
+
+if (usuario1 == "Thomas Viceconte" || usuario1 == "Natalia Ursino") {
+    alert("Hola " + usuario1 + " Bienvenido a Por el Mundo");
+    console.log("Puede ingresar");
+}else {
+    alert("Error: Ingrese los datos");
+    console.log("No puede ingresar");
+}
+
 let numDeTabla = Number(prompt("Ingresa el número de la tabla de multiplicar"))
     for(i = 1; i <=8; i++){
         let res = numDeTabla * i;
@@ -43,3 +53,4 @@ console.log(subtitulo);
 
 let divs = document.getElementsByTagName("div");
 console.log(divs[1].innerText);
+
