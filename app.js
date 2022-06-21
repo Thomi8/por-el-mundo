@@ -54,3 +54,7 @@ console.log(subtitulo);
 let divs = document.getElementsByTagName("div");
 console.log(divs[1].innerText);
 
+let titulo = document.querySelector (".todo h1");
+titulo.innerHTML = "<b> Por el mundo </b>";
+
+
