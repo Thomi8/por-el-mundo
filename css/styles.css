@@ -1,6 +1,6 @@
 .colores1 {
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255); }
+  background-color: black;
+  color: white; }
 
 /* HEADER */
 * {
@@ -9,6 +9,24 @@
 
 .paises {
   display: flex; }
+
+#mandarMail{
+  opacity: 0;
+}
+
+#cart_menu_num {
+  position: absolute;
+  top: 0;
+  left: 55%;
+  background: red;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 2px; }
 
 /* MAIN */
 .titulo {
@@ -564,6 +582,16 @@ img.btn-whatsapp {
     box-shadow: 0px 0px 15px 0px #075e54;
     transition-duration: 1s; }
 
+
+/* FORMULARIO */
+.mb-3{
+  margin: auto;
+  width: 25%;
+}
+
+.enviarMail{
+  margin-left: 45%;
+}
 /* Footer */
 .footer {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;

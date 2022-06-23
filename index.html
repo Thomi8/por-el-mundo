@@ -55,10 +55,10 @@
         </select>
     </div>
 
-    <main class="todo">
+    <main  class="todo">
         <h1 class="animate__animated animate__bounceInDown titulo">Por el mundo</h1>
-        <h3 class="subtitulo">Viajá seguro</h3>
-
+        <h3 id="subtitulo" class="subtitulo">Viajá seguro</h3>
+        
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -101,6 +101,7 @@
                         <p>A partir de $80.000</p>
                         <hr>
                         <a class="enlace" href="./html/vuelos.html">Ver más</a>
+                        <a class="enlace" href="">Agregar al carrito</a>
                     </li>
                     <li class="vuelosListItem losAngeles">
                         <h3 class="titulares">Los Ángeles</h3>
@@ -108,21 +109,24 @@
                         <p>Desde Buenos Aires.</p>
                         <p>A partir de $50.000</p>
                         <hr>
-                        <a class="enlace" href="./html/vuelos.html">Ver más</a></li>
+                        <a class="enlace" href="./html/vuelos.html">Ver más</a>
+                        <a class="enlace" href="">Agregar al carrito</a></li>
                     <li class="vuelosListItem cancun">
                         <h3 class="titulares">Cancún</h3>
                         <hr>
                         <p>Desde Buenos Aires.</p>
                         <p>A partir de $60.000</p>
                         <hr>
-                        <a class="enlace" href="./html/vuelos.html">Ver más</a></li>
+                        <a class="enlace" href="./html/vuelos.html">Ver más</a>
+                        <a class="enlace" href="">Agregar al carrito</a></li>
                     <li class="vuelosListItem riodeJaneiro">
                         <h3 class="titulares">Río de Janeiro</h3>
                         <hr>
                         <p>Desde Buenos Aires.</p>
                         <p>A partir de $40.000</p>
                         <hr>
-                        <a class="enlace" href="./html/vuelos.html">Ver más</a></li>
+                        <a class="enlace" href="./html/vuelos.html">Ver más</a>
+                        <a class="enlace" href="">Agregar al carrito</a></li>
                 </ul>
             </div>
             <div class="hotelesDiv">
@@ -135,7 +139,8 @@
                         <p>3 estrellas | Cancelación gratuita.</p>
                         <p>$40.000</p>
                         <hr>
-                        <a class="enlace" href="html/hoteles.html">Ver más</a></li>
+                        <a class="enlace" href="html/hoteles.html">Ver más</a>
+                        <a class="enlace" href="">Agregar al carrito</a></li>
                     <li class="hotelesListItem newYork">
                         <h3 class="titulares">New York</h3>
                         <hr>
@@ -143,7 +148,8 @@
                         <p>5 estrellas</p>
                         <p>$100.000</p>
                         <hr>
-                        <a class="enlace" href="html/hoteles.html">Ver más</a></li>
+                        <a class="enlace" href="html/hoteles.html">Ver más</a>
+                        <a class="enlace" href="">Agregar al carrito</a></li>
                     <li class="hotelesListItem orlando">
                         <h3 class="titulares">Orlando</h3>
                         <hr>
@@ -151,7 +157,8 @@
                         <p>3 estrellas</p>
                         <p>$30.000</p>
                         <hr>
-                        <a class="enlace" href="html/hoteles.html">Ver más</a></li>
+                        <a class="enlace" href="html/hoteles.html">Ver más</a>
+                        <a class="enlace" href="">Agregar al carrito</a></li>
                     <li class="hotelesListItem barcelona">
                         <h3 class="titulares">Barcelona</h3>
                         <hr>
@@ -159,7 +166,8 @@
                         <p>4 estrellas | Cancelación gratuita.</p>
                         <p>$25.000</p>
                         <hr>
-                        <a class="enlace" href="html/hoteles.html">Ver más</a></li>
+                        <a class="enlace" href="html/hoteles.html">Ver más</a>
+                        <a class="enlace" href="">Agregar al carrito</a></li>
                 </ul>
             </div>
         </section>
@@ -177,19 +185,44 @@
 </div>
 
 <footer class="footer">
-    <form class="formSign" id="formulario">
+    <!-- <form id="btnPrincipal" class="formSign">
         <p class="tituloFoo">Contáctanos y no te pierdas ninguna novedad!</p>
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Ingrese su email</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="example@gmail.com" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">Nunca vamos a compartir tu email con nadie.</div>
+          <label for="name" class="form-label">Ingrese su nombre y apellido</label>
+          <input type="text" class="form-control" name="name" id="name" placeholder="Nombre y apellido">
         </div>
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Ingrese su contraseña</label>
-          <input type="password" class="form-control" placeholder="Contraseña" id="exampleInputPassword1">
+          <label for="email" class="form-label">Ingrese su email</label>
+          <input type="email" class="form-control" name="name" id="email" placeholder="example@gmail.com" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">Nunca vamos a compartir tu email con nadie.</div>
         </div>
-        <input type="submit" value="Enviar">
-      </form>
+        <label class="mb-3" for="message">Escribe tu mensaje</label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <button id="btnPrincipal" type="submit">Enviar formulario</button>
+        
+      </form> -->
+      <!-- modify this form HTML and place wherever you want your form -->
+      <p class="tituloFoo">Contáctanos y no te pierdas ninguna novedad!</p>
+      <div class="mb-3"> <form
+        action="https://formspree.io/f/mayvzjrl"
+          method="POST">
+        </div>
+        <div class="mb-3">
+          <label>
+          Tu email:
+            <input class="mail" type="email" name="email">
+          </label>
+        </div>
+    <div class="mb-3">
+      <label>
+      Tu mensaje:
+      <textarea name="message"></textarea>
+    </label>
+  </div>
+
+<button class="enviarMail" id="btnPrincipal" type="submit">Enviar</button>
+
+</form>
 
     <div class="redesDiv hotelContacto">
         <h3 class="tituloRedes">Seguinos en nuestras redes!</h3>
@@ -198,7 +231,7 @@
         <a class="redes hotel2" href="https://m.facebook.com/login/?locale=es_ES" target="blank"><i class="bi bi-facebook"></i></a>
     </div>
 </footer>
-<script src="app.js"></script>
+<script src="./js/app.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>

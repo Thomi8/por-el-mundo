@@ -57,4 +57,8 @@ console.log(divs[1].innerText);
 let titulo = document.querySelector (".todo h1");
 titulo.innerHTML = "<b> Por el mundo </b>";
 
-
+let boton = document.getElementById ("btnPrincipal")
+boton.addEventListener("click", respuestaClick)
+function respuestaClick(){
+    console.log("Email enviado");
+}
