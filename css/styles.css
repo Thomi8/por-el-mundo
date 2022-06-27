@@ -10,10 +10,6 @@
 .paises {
   display: flex; }
 
-#mandarMail{
-  opacity: 0;
-}
-
 #cart_menu_num {
   position: absolute;
   top: 0;
@@ -583,15 +579,43 @@ img.btn-whatsapp {
     transition-duration: 1s; }
 
 
-/* FORMULARIO */
-.mb-3{
-  margin: auto;
-  width: 25%;
+/*CARRITO DE COMPRAS */
+.description{
+  height: 25px;
+  overflow: hidden;
+  transition: height .3s ease-in .3s;
+}
+.description:hover{
+  height: 80px;
+}
+.carrito{
+  min-height: 80vh;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+.table__productos{
+  display: flex;
+}
+.table__productos > img{
+  width: 9rem;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+.table__cantidad > input{
+  width: 40px;
+  border: none;
+  outline: 0;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+.hide, .remove{
+  display: none;
 }
 
-.enviarMail{
-  margin-left: 45%;
-}
 /* Footer */
 .footer {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
