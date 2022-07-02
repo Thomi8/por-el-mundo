@@ -10,7 +10,7 @@ usuario4.apellido = "Ursino"
 const usuarios = [usuario1, usuario4]
 console.log(usuarios);
 
-/* const usuario2 = {
+const usuario2 = {
     edad2: 20,
     ciudad: "Mar del Plata",
     telefonos: {
@@ -97,7 +97,7 @@ let objeto = JSON.parse (localStorage.getItem("objeto"));
 console.log(objeto);
 
 
-sessionStorage.setItem("usuario","thomiviceconte");
+/* sessionStorage.setItem("usuario","thomiviceconte"); */
 
 const productos = [
 {destino:"miami", precio: 80000},
@@ -111,7 +111,6 @@ for(const producto of productos){
     guardar(producto.destino, JSON.stringify(producto));
 }
 
-
 let usuario3;
 let usuarioStorage = sessionStorage.getItem("usuario");
 
@@ -124,4 +123,3 @@ if(usuarioStorage){
     usuario = prompt("Ingrese su nombre");
     sessionStorage.setItem("usuario", usuario);
 }
- */
