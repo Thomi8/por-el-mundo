@@ -30,7 +30,7 @@ const array = [];
 }
 console.log(array);
 
-function calculadora(primernumero, segundonumero, operacion) {
+/* function calculadora(primernumero, segundonumero, operacion) {
     switch(operacion){
         case "+":
             return primernumero + segundonumero;
@@ -48,13 +48,13 @@ function calculadora(primernumero, segundonumero, operacion) {
             return "Valores nulos";
         break;
     }
-}
+} */
 
-let pregunta1 = Number (prompt("Ingresa el primer num"));
+/* let pregunta1 = Number (prompt("Ingresa el primer num"));
 let pregunta2 = Number (prompt("Ingresa el segundo num"));
 let operadorMat = prompt("Ingresa + para sumar, - para restar, * para multiplicar, / para dividir");
 
-console.log(calculadora(pregunta1, pregunta2, operadorMat));
+console.log(calculadora(pregunta1, pregunta2, operadorMat)); */
 
 
 let subtitulo = document.getElementsByClassName("subtitulo");
@@ -113,13 +113,16 @@ for(const producto of productos){
 
 let usuario3;
 let usuarioStorage = sessionStorage.getItem("usuario");
+usuarioStorage = prompt("Ingrese su nombre");
+sessionStorage.setItem("usuario", usuarioStorage);
 
 if(usuarioStorage){
     let message = `Bienvenido ${usuarioStorage}`;
     alert(message);
-    usuario = usuarioStorage;
 }else{
-    alert("no iniciaste sesión");
-    usuario = prompt("Ingrese su nombre");
-    sessionStorage.setItem("usuario", usuario);
+    Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'No iniciaste sesión!',
+    })
 }
