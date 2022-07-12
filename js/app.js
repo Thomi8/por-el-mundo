@@ -30,33 +30,6 @@ const array = [];
 }
 console.log(array);
 
-/* function calculadora(primernumero, segundonumero, operacion) {
-    switch(operacion){
-        case "+":
-            return primernumero + segundonumero;
-        break;
-        case "-":
-            return primernumero - segundonumero;
-        break;
-        case "*":
-            return primernumero * segundonumero;
-        break;
-        case "/":
-            return primernumero / segundonumero;
-        break;
-        default:
-            return "Valores nulos";
-        break;
-    }
-} */
-
-/* let pregunta1 = Number (prompt("Ingresa el primer num"));
-let pregunta2 = Number (prompt("Ingresa el segundo num"));
-let operadorMat = prompt("Ingresa + para sumar, - para restar, * para multiplicar, / para dividir");
-
-console.log(calculadora(pregunta1, pregunta2, operadorMat)); */
-
-
 let subtitulo = document.getElementsByClassName("subtitulo");
 console.log(subtitulo);
 
@@ -77,7 +50,9 @@ function respuestaClick(){
         showConfirmButton: false,
         timer: 2000
     })
+    /* Usé esta libreria para dar una señal de que la consulta fue enviada */
 }
+
 
 
 //STORAGE 
@@ -94,17 +69,16 @@ console.log(edad);
 
 localStorage.setItem("objeto", JSON.stringify({nombre: "bruno", apellido: "simone"}));
 let objeto = JSON.parse (localStorage.getItem("objeto"));
-console.log(objeto);
+console.log(objeto); 
 
 
 /* sessionStorage.setItem("usuario","thomiviceconte"); */
-
 const productos = [
-{destino:"miami", precio: 80000},
-{destino:"losangeles", precio: 50000},
-{destino:"cancun", precio: 60000},
-{destino:"riodejaneiro", precio: 40000},
-];
+    {destino:"miami", precio: 80000},
+    {destino:"losangeles", precio: 50000},
+    {destino:"cancun", precio: 60000},
+    {destino:"riodejaneiro", precio: 40000},
+    ];    
 
 const guardar = (clave, valor) => {localStorage.setItem(clave, valor)};
 for(const producto of productos){
@@ -113,16 +87,29 @@ for(const producto of productos){
 
 let usuario3;
 let usuarioStorage = sessionStorage.getItem("usuario");
-usuarioStorage = prompt("Ingrese su nombre");
-sessionStorage.setItem("usuario", usuarioStorage);
 
 if(usuarioStorage){
     let message = `Bienvenido ${usuarioStorage}`;
     alert(message);
+    usuario = usuarioStorage;
 }else{
-    Swal.fire({
-        icon: 'error',
-        title: 'Oops...',
-        text: 'No iniciaste sesión!',
+    alert("no iniciaste sesión");
+    usuario = prompt("Ingrese su nombre");
+    sessionStorage.setItem("usuario", usuario);
+}
+
+const subtitulos = document.querySelector('#subtitulo')
+function cargarSubtitulo(){
+    fetch('data.json')
+    .then(respuesta => respuesta.json())
+    .then(subs => {
+        subs.forEach(nombre => {
+            const sub = document.createElement('h3');
+            sub.innerHTML = `
+            <h3>${nombre.name}</h3>
+            `;
+            subtitulos.appendChild(sub)
+        });
     })
 }
+cargarSubtitulo();
