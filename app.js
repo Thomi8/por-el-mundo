@@ -22,7 +22,6 @@ let { edad2, familia, telefonos: {celular} } = usuario2;
     console.log(edad2);
     console.log(celular);
 
-
 const array = [];
     for(let i=1; i<3; i++){
         array.push(i);
@@ -36,9 +35,6 @@ console.log(subtitulo);
 let divs = document.getElementsByTagName("div");
 console.log(divs[1].innerText);
 
-let titulo = document.querySelector (".todo h1");
-titulo.innerHTML = "<b> Por el mundo </b>";
-
 let boton = document.getElementById ("btnPrincipal")
 boton.addEventListener("click", respuestaClick)
 function respuestaClick(){
@@ -50,10 +46,7 @@ function respuestaClick(){
         showConfirmButton: false,
         timer: 2000
     })
-    /* Usé esta libreria para dar una señal de que la consulta fue enviada */
 }
-
-
 
 //STORAGE 
 localStorage.setItem("nombre", "thomas");
@@ -70,7 +63,6 @@ console.log(edad);
 localStorage.setItem("objeto", JSON.stringify({nombre: "bruno", apellido: "simone"}));
 let objeto = JSON.parse (localStorage.getItem("objeto"));
 console.log(objeto); 
-
 
 /* sessionStorage.setItem("usuario","thomiviceconte"); */
 const productos = [
@@ -98,18 +90,72 @@ if(usuarioStorage){
     sessionStorage.setItem("usuario", usuario);
 }
 
-const subtitulos = document.querySelector('#subtitulo')
-function cargarSubtitulo(){
+
+const listaVuelos = document.querySelector('#vuelosList');
+const listaHoteles = document.querySelector('#hotelesList');
+
+
+//VUELOSS
+function cargarVuelos() {
     fetch('data.json')
     .then(respuesta => respuesta.json())
-    .then(subs => {
-        subs.forEach(nombre => {
-            const sub = document.createElement('h3');
-            sub.innerHTML = `
-            <h3>${nombre.name}</h3>
-            `;
-            subtitulos.appendChild(sub)
+
+    //VUELOS
+    .then(vuelos => {
+        let vuelosId = vuelos.filter(vuelo => vuelo.id <= 4); 
+        vuelosId.forEach(vuelo => {
+            const li = document.createElement('li');
+            li.innerHTML += `
+            <li class="vuelosListItem miami">
+            <h3 class="titulares"> ${vuelo.titulo} </h3>
+            <hr>
+            <p>${vuelo.parrafo}</p>
+            <p>${vuelo.parrafo2}</p>
+            <hr>
+            <a class="enlace" href="./html/vuelos.html">Ver más</a>
+            </li>
+            `
+            listaVuelos.appendChild(li)
         });
     })
-}
-cargarSubtitulo();
+
+    .catch(function() {
+        console.log("error");
+    })
+};
+
+
+//HOTELES
+
+function cargarHoteles() {
+    fetch('data.json')
+    .then(respuesta => respuesta.json())
+
+    .then(hoteles => {
+        let hotelesId = hoteles.filter(hotel => hotel.id >= 5); 
+        hotelesId.forEach(hotel => {
+            const li = document.createElement('li');
+            li.innerHTML += `
+            <li class="hotelesListItem  miami">
+            <h3 class="titulares"> ${hotel.titulo} </h3>
+            <hr>
+            <p>${hotel.parrafo}</p>
+            <p>${hotel.parrafo2}</p>
+            <hr>
+            <a class="enlace" href="./html/hoteles.html">Ver más</a>
+            </li>
+            `
+            listaHoteles.appendChild(li)
+        });
+    })
+
+    .catch(function() {
+        console.log("error");
+    })
+};
+
+
+
+
+cargarVuelos();
+cargarHoteles();

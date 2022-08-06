@@ -1,3 +1,54 @@
 [
-    {"name": "Viajá seguro"}
+{
+    "id": 1,
+    "titulo": "Miami",
+    "parrafo": "Desde Buenos Aires",
+    "parrafo2": "A partir de $80.000"
+},
+{
+    "id": 2,
+    "titulo": "Los Ángeles",
+    "parrafo": "Desde Buenos Aires",
+    "parrafo2": "A partir de $50.000"
+},
+{
+    "id": 3,
+    "titulo": "Cancún",
+    "parrafo": "Desde Buenos Aires",
+    "parrafo2": "A partir de $60.000"
+},
+{
+    "id": 4,
+    "titulo": "Río de Janeiro",
+    "parrafo": "Desde Buenos Aires",
+    "parrafo2": "A partir de $40.000"
+},
+{
+    "id": 5,
+    "titulo": "Cancún",
+    "parrafo": "Haven Riviera Cancun",
+    "parrafo2": "3 estrellas | Cancelación gratuita.",
+    "parrafo3": "$40.000"
+},
+{
+    "id": 6,
+    "titulo": "New York",
+    "parrafo": "The Dominick Hotel.",
+    "parrafo2": "5 estrellas",
+    "parrafo3": "$100.000"
+},
+{
+    "id": 7,
+    "titulo": "Orlando",
+    "parrafo": "Rosen Plaza Hotel.",
+    "parrafo2": "3 estrellas",
+    "parrafo3": "$30.000"
+},
+{
+    "id": 8,
+    "titulo": "Barcelona",
+    "parrafo": "H10 Madison.",
+    "parrafo2": "4 estrellas | Cancelación gratuita.",
+    "parrafo3": "$25.000"
+}
 ]
